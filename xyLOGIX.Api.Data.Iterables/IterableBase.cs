@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using xyLOGIX.Api.Data.Iterables.Interfaces;
+using xyLOGIX.Api.Data.Iterators.Interfaces;
 
 namespace xyLOGIX.Api.Data.Iterables
 {
@@ -14,12 +15,30 @@ namespace xyLOGIX.Api.Data.Iterables
     public abstract class IterableBase<T> : IIterable<T> where T : class
     {
         /// <summary>
+        /// Reference to the iterator that we use to return for enumeration functionality.
+        /// </summary>
+        private readonly IIterator<T> _iterator;
+
+        /// <summary>
+        /// Constructs a new instance of
+        /// <see
+        ///     cref="T:xyLOGIX.Api.Data.Iterables.IterableBase" />
+        /// and returns a
+        /// reference to it.
+        /// </summary>
+        protected IterableBase(IIterator<T> iterator)
+        {
+            _iterator = iterator;
+        }
+
+        /// <summary>
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
         /// <returns>
         /// An enumerator that can be used to iterate through the collection.
         /// </returns>
-        public abstract IEnumerator<T> GetEnumerator();
+        public IEnumerator<T> GetEnumerator()
+            => _iterator; // this also implements the IEnumerator<T> interface.
 
         /// <summary>
         /// Returns an enumerator that iterates through a collection.

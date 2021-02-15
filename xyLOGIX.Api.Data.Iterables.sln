@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterables"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterables.Interfaces", "xyLOGIX.Api.Data.Iterables.Interfaces\xyLOGIX.Api.Data.Iterables.Interfaces.csproj", "{B71D1A36-9468-45A6-8C6D-B60F35BC561A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterators", "..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.csproj", "{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterators.Events", "..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Events\xyLOGIX.Api.Data.Iterators.Events.csproj", "{3E3DB35C-0B83-4D8C-AC6B-22A085117026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterators.Exceptions", "..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Exceptions\xyLOGIX.Api.Data.Iterators.Exceptions.csproj", "{C86E05F7-04BB-4A45-B264-B3BF976D5B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xyLOGIX.Api.Data.Iterators.Interfaces", "..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Interfaces\xyLOGIX.Api.Data.Iterators.Interfaces.csproj", "{6C7EC464-BCD6-43A7-A147-984E404F43FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +39,38 @@ Global
 		{B71D1A36-9468-45A6-8C6D-B60F35BC561A}.Release|x64.Build.0 = Release|x64
 		{B71D1A36-9468-45A6-8C6D-B60F35BC561A}.Release|x86.ActiveCfg = Release|x86
 		{B71D1A36-9468-45A6-8C6D-B60F35BC561A}.Release|x86.Build.0 = Release|x86
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Debug|x64.ActiveCfg = Debug|x64
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Debug|x64.Build.0 = Debug|x64
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Debug|x86.ActiveCfg = Debug|x86
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Debug|x86.Build.0 = Debug|x86
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Release|x64.ActiveCfg = Release|x64
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Release|x64.Build.0 = Release|x64
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Release|x86.ActiveCfg = Release|x86
+		{F5B8CEC3-9C00-45EE-8202-97080D0C95BB}.Release|x86.Build.0 = Release|x86
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Debug|x64.ActiveCfg = Debug|x64
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Debug|x64.Build.0 = Debug|x64
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Debug|x86.ActiveCfg = Debug|x86
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Debug|x86.Build.0 = Debug|x86
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Release|x64.ActiveCfg = Release|x64
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Release|x64.Build.0 = Release|x64
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Release|x86.ActiveCfg = Release|x86
+		{3E3DB35C-0B83-4D8C-AC6B-22A085117026}.Release|x86.Build.0 = Release|x86
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Debug|x64.ActiveCfg = Debug|x64
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Debug|x64.Build.0 = Debug|x64
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Debug|x86.ActiveCfg = Debug|x86
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Debug|x86.Build.0 = Debug|x86
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Release|x64.ActiveCfg = Release|x64
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Release|x64.Build.0 = Release|x64
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Release|x86.ActiveCfg = Release|x86
+		{C86E05F7-04BB-4A45-B264-B3BF976D5B04}.Release|x86.Build.0 = Release|x86
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Debug|x64.ActiveCfg = Debug|x64
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Debug|x64.Build.0 = Debug|x64
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Debug|x86.ActiveCfg = Debug|x86
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Debug|x86.Build.0 = Debug|x86
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Release|x64.ActiveCfg = Release|x64
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Release|x64.Build.0 = Release|x64
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Release|x86.ActiveCfg = Release|x86
+		{6C7EC464-BCD6-43A7-A147-984E404F43FD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
