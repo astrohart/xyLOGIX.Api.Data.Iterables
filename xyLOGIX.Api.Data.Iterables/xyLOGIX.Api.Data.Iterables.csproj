@@ -5,7 +5,7 @@
     <ApplicationIcon>1382_cogs.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
-    <ProjectGuid>{84C1F71A-AAA4-4A08-9728-19E710965E4D}</ProjectGuid>
+    <ProjectGuid>{DCA15B26-3DFC-485D-8E4A-8FF5328EFA46}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -86,13 +86,13 @@
     <Content Include="1382_cogs.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xyLOGIX.Api.Data.Iterables.Interfaces\xyLOGIX.Api.Data.Iterables.Interfaces.csproj">
-      <Project>{B71D1A36-9468-45A6-8C6D-B60F35BC561A}</Project>
-      <Name>xyLOGIX.Api.Data.Iterables.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Interfaces\xyLOGIX.Api.Data.Iterators.Interfaces.csproj">
       <Project>{6C7EC464-BCD6-43A7-A147-984E404F43FD}</Project>
       <Name>xyLOGIX.Api.Data.Iterators.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xyLOGIX.Api.Data.Iterables.Interfaces\xyLOGIX.Api.Data.Iterables.Interfaces.csproj">
+      <Project>{B71D1A36-9468-45A6-8C6D-B60F35BC561A}</Project>
+      <Name>xyLOGIX.Api.Data.Iterables.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

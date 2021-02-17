@@ -38,7 +38,7 @@ namespace xyLOGIX.Api.Data.Iterables
         /// An enumerator that can be used to iterate through the collection.
         /// </returns>
         public IEnumerator<T> GetEnumerator()
-            => _iterator; // this also implements the IEnumerator<T> interface.
+            => _iterator;
 
         /// <summary>
         /// Returns an enumerator that iterates through a collection.
@@ -49,5 +49,24 @@ namespace xyLOGIX.Api.Data.Iterables
         /// </returns>
         IEnumerator IEnumerable.GetEnumerator()
             => GetEnumerator();
+
+        /// <summary>
+        /// Returns an iterator, that implements
+        /// <see
+        ///     cref="T:xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}" />
+        /// , that
+        /// iterates through the collection.
+        /// </summary>
+        /// <returns>
+        /// An iterator that can be used to iterate through the collection.
+        /// </returns>
+        /// <remarks>
+        /// This method's implementation merely casts the result of the
+        /// <see
+        ///     cref="M:xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator" />
+        /// method to <see cref="T:xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}" />.
+        /// </remarks>
+        public IIterator<T> GetIterator()
+            => (IIterator<T>) GetEnumerator();
     }
 }
