@@ -33,7 +33,6 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
         /// </remarks>
         IIterator<T> GetIterator();
 
-        IIterable<T> HavingIterator<T>(IIterator<T> iterator)
-            where T : class;
+        IIterable<T> HavingIterator(IIterator<T> iterator);
     }
 }

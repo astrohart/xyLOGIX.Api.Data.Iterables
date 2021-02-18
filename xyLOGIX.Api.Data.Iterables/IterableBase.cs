@@ -58,12 +58,11 @@ namespace xyLOGIX.Api.Data.Iterables
         public IIterator<T> GetIterator()
             => (IIterator<T>) GetEnumerator();
 
-        public IIterable<T> HavingIterator<T>(IIterator<T> iterator)
-            where T : class
+        public IIterable<T> HavingIterator(IIterator<T> iterator)
         {
             _iterator = iterator;
 
-            return (IIterable<T>) this;
+            return this;
         }
     }
 }
