@@ -58,6 +58,15 @@ namespace xyLOGIX.Api.Data.Iterables
         public IIterator<T> GetIterator()
             => (IIterator<T>) GetEnumerator();
 
+        /// <summary>
+        /// Associates this iterable with an iterator.  Basically, this sets up the same relationship as exists between <see cref="T:System.Collections.Generic.IEnumerable"/> and <see cref="T:System.Collections.Generic.IEnumerator"/>.
+        /// </summary>
+        /// <param name="iterator">(Required.) Reference to an instance of an object that implements the <see cref="T:xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}"/> interface that represents the iterator object that is to be associated with this object.</param>
+        /// <returns>
+        /// Reference to the same instance of the object that called this method, for fluent use.
+        /// </returns>
+        /// <exception cref="T:ArgumentNullException">Thrown if the required parameter, <paramref name="iterator"/>, is passed a <c>null</c> value.</exception>
+        /// <remarks>Users may wonder why we are writing this method here as opposed to using inversion of control by passing this in the constructor.<para/>We have a factory in front of both these objects, and the objective of using fluent methods instead is to avoid having to include a whole bunch of NuGet packages in the factory module.</remarks>
         public IIterable<T> HavingIterator(IIterator<T> iterator)
         {
             _iterator = iterator;
