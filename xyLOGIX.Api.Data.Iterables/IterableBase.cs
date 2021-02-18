@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using xyLOGIX.Api.Data.Iterables.Interfaces;
 using xyLOGIX.Api.Data.Iterators.Interfaces;
@@ -26,9 +27,17 @@ namespace xyLOGIX.Api.Data.Iterables
         /// and returns a
         /// reference to it.
         /// </summary>
+        /// <param name="iterator">
+        /// (Required.) Reference to an instance of an iterator object.
+        /// </param>
+        /// <exception cref="T:ArgumentNullException">
+        /// Thrown if the required parameter, <paramref name="iterator" />, is
+        /// passed a <c>null</c> value.
+        /// </exception>
         protected IterableBase(IIterator<T> iterator)
         {
-            _iterator = iterator;
+            _iterator = iterator ??
+                        throw new ArgumentNullException(nameof(iterator));
         }
 
         /// <summary>
