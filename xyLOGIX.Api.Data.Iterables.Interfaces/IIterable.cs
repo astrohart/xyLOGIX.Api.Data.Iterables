@@ -32,5 +32,8 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
         /// method to <see cref="T:xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}" />.
         /// </remarks>
         IIterator<T> GetIterator();
+
+        IIterable<T> HavingIterator<T>(IIterator<T> iterator)
+            where T : class;
     }
 }

@@ -18,27 +18,7 @@ namespace xyLOGIX.Api.Data.Iterables
         /// <summary>
         /// Reference to the iterator that we use to return for enumeration functionality.
         /// </summary>
-        private readonly IIterator<T> _iterator;
-
-        /// <summary>
-        /// Constructs a new instance of
-        /// <see
-        ///     cref="T:xyLOGIX.Api.Data.Iterables.IterableBase" />
-        /// and returns a
-        /// reference to it.
-        /// </summary>
-        /// <param name="iterator">
-        /// (Required.) Reference to an instance of an iterator object.
-        /// </param>
-        /// <exception cref="T:ArgumentNullException">
-        /// Thrown if the required parameter, <paramref name="iterator" />, is
-        /// passed a <c>null</c> value.
-        /// </exception>
-        protected IterableBase(IIterator<T> iterator)
-        {
-            _iterator = iterator ??
-                        throw new ArgumentNullException(nameof(iterator));
-        }
+        private IIterator<T> _iterator;
 
         /// <summary>
         /// Returns an enumerator that iterates through the collection.
@@ -77,5 +57,13 @@ namespace xyLOGIX.Api.Data.Iterables
         /// </remarks>
         public IIterator<T> GetIterator()
             => (IIterator<T>) GetEnumerator();
+
+        public IIterable<T> HavingIterator<T>(IIterator<T> iterator)
+            where T : class
+        {
+            _iterator = iterator;
+
+            return (IIterable<T>) this;
+        }
     }
 }
