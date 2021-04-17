@@ -7,7 +7,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <ProjectGuid>{DCA15B26-3DFC-485D-8E4A-8FF5328EFA46}</ProjectGuid>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -90,9 +91,7 @@
       <HintPath>..\packages\PostSharp.Patterns.Diagnostics.Log4Net.6.9.4\lib\net45\PostSharp.Patterns.Diagnostics.Backends.Log4Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GlobalAspects.cs" />
@@ -117,10 +116,6 @@
     <ProjectReference Include="..\..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Interfaces\xyLOGIX.Api.Data.Iterators.Interfaces.csproj">
       <Project>{6c7ec464-bcd6-43a7-a147-984e404f43fd}</Project>
       <Name>xyLOGIX.Api.Data.Iterators.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.csproj">
-      <Project>{f5b8cec3-9c00-45ee-8202-97080d0c95bb}</Project>
-      <Name>xyLOGIX.Api.Data.Iterators</Name>
     </ProjectReference>
     <ProjectReference Include="..\xyLOGIX.Api.Data.Iterables.Interfaces\xyLOGIX.Api.Data.Iterables.Interfaces.csproj">
       <Project>{B71D1A36-9468-45A6-8C6D-B60F35BC561A}</Project>
