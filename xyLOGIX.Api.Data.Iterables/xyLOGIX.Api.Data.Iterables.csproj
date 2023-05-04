@@ -7,7 +7,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <ProjectGuid>{DCA15B26-3DFC-485D-8E4A-8FF5328EFA46}</ProjectGuid>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -117,6 +118,10 @@
     <ProjectReference Include="..\..\xyLOGIX.Api.Data.Iterators\xyLOGIX.Api.Data.Iterators.Interfaces\xyLOGIX.Api.Data.Iterators.Interfaces.csproj">
       <Project>{6c7ec464-bcd6-43a7-a147-984e404f43fd}</Project>
       <Name>xyLOGIX.Api.Data.Iterators.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\xyLOGIX.Core.Debug.VS2019\xyLOGIX.Core.Debug\xyLOGIX.Core.Debug.csproj">
+      <Project>{C445C052-26B6-4884-9A7B-25DC7ABC0DED}</Project>
+      <Name>xyLOGIX.Core.Debug</Name>
     </ProjectReference>
     <ProjectReference Include="..\xyLOGIX.Api.Data.Iterables.Interfaces\xyLOGIX.Api.Data.Iterables.Interfaces.csproj">
       <Project>{B71D1A36-9468-45A6-8C6D-B60F35BC561A}</Project>
