@@ -58,7 +58,9 @@ This method has no parameters.
 
 ##### Summary
 
-Returns an iterator, that implements [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') , that
+Returns an iterator, that implements
+[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}')
+, that
 iterates through the collection.
 
 ##### Returns
@@ -71,7 +73,8 @@ This method has no parameters.
 
 ##### Remarks
 
-This method's implementation merely casts the result of the [GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
+This method's implementation merely casts the result of the
+[GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
 method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-HavingIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
@@ -80,7 +83,9 @@ method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} '
 ##### Summary
 
 Associates this iterable with an iterator. Basically, this sets up
-the same relationship as exists between [IEnumerable](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable') and [IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerator 'System.Collections.Generic.IEnumerator').
+the same relationship as exists between
+[IEnumerable](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable')
+and [IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerator 'System.Collections.Generic.IEnumerator').
 
 ##### Returns
 
@@ -92,7 +97,8 @@ method, for fluent use.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | iterator | [xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{\`0}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0}') | (Required.) Reference to an instance of an object that implements
-the [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}')
+the
+[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}')
 interface that represents the iterator object that is to be
 associated with this object. |
 
