@@ -12,7 +12,7 @@ namespace xyLOGIX.Api.Data.Iterables
     /// </summary>
     /// <typeparam name="T">
     /// Type of the element of the collection -- typically a JSON-deserialized
-    /// class representing a single value in the REST API's data set.
+    /// class representing a single value in the REST API data set.
     /// </typeparam>
     public abstract class IterableBase<T> : IIterable<T> where T : class
     {
