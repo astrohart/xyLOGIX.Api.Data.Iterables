@@ -29,7 +29,7 @@ Serves as the common base for all REST API iterable objects.
 | Name | Description |
 | ---- | ----------- |
 | T | Type of the element of the collection -- typically a JSON-deserialized
-class representing a single value in the REST API's data set. |
+class representing a single value in the REST API data set. |
 
 <a name='F-xyLOGIX-Api-Data-Iterables-IterableBase`1-_iterator'></a>
 ### _iterator `constants`
