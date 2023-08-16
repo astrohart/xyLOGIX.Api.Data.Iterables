@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using xyLOGIX.Api.Data.Iterators.Interfaces;
 
 namespace xyLOGIX.Api.Data.Iterables.Interfaces
