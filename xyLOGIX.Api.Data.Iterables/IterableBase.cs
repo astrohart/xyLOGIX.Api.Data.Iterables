@@ -64,7 +64,7 @@ namespace xyLOGIX.Api.Data.Iterables
             {
                 result = (IIterator<T>)GetEnumerator();
 
-                result?.Reset();
+                result.Reset();
             }
             catch (Exception ex)
             {
