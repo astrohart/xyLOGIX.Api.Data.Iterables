@@ -56,6 +56,6 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
         /// of using fluent methods instead is to avoid having to include a
         /// whole bunch of NuGet packages in the factory module.
         /// </remarks>
-        IIterable<T> HavingIterator(IIterator<T> iterator);
+        IIterable<T> AttachIterator(IIterator<T> iterator);
     }
 }
