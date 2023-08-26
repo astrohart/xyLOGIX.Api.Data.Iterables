@@ -5,9 +5,9 @@
 
 - [IterableBase\`1](#T-xyLOGIX-Api-Data-Iterables-IterableBase`1 'xyLOGIX.Api.Data.Iterables.IterableBase`1')
   - [_iterator](#F-xyLOGIX-Api-Data-Iterables-IterableBase`1-_iterator 'xyLOGIX.Api.Data.Iterables.IterableBase`1._iterator')
+  - [AttachIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.IterableBase`1.AttachIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [GetEnumerator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.GetEnumerator')
   - [GetIterator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetIterator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.GetIterator')
-  - [HavingIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-HavingIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.IterableBase`1.HavingIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [System#Collections#IEnumerable#GetEnumerator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-System#Collections#IEnumerable#GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.System#Collections#IEnumerable#GetEnumerator')
 - [Resources](#T-xyLOGIX-Api-Data-Iterables-Properties-Resources 'xyLOGIX.Api.Data.Iterables.Properties.Resources')
   - [Culture](#P-xyLOGIX-Api-Data-Iterables-Properties-Resources-Culture 'xyLOGIX.Api.Data.Iterables.Properties.Resources.Culture')
@@ -38,47 +38,8 @@ class representing a single value in the REST API data set. |
 
 Reference to the iterator that we use to return for enumeration functionality.
 
-<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator'></a>
-### GetEnumerator() `method`
-
-##### Summary
-
-Returns an enumerator that iterates through the collection.
-
-##### Returns
-
-An enumerator that can be used to iterate through the collection.
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetIterator'></a>
-### GetIterator() `method`
-
-##### Summary
-
-Returns an iterator, that implements
-[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}')
-, that
-iterates through the collection.
-
-##### Returns
-
-An iterator that can be used to iterate through the collection.
-
-##### Parameters
-
-This method has no parameters.
-
-##### Remarks
-
-This method's implementation merely casts the result of the
-[GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
-method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
-
-<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-HavingIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
-### HavingIterator(iterator) `method`
+<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
+### AttachIterator(iterator) `method`
 
 ##### Summary
 
@@ -119,6 +80,45 @@ using inversion of control by passing this in the constructor.
 We have a factory in front of both these objects, and the objective
 of using fluent methods instead is to avoid having to include a
 whole bunch of NuGet packages in the factory module.
+
+<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator'></a>
+### GetEnumerator() `method`
+
+##### Summary
+
+Returns an enumerator that iterates through the collection.
+
+##### Returns
+
+An enumerator that can be used to iterate through the collection.
+
+##### Parameters
+
+This method has no parameters.
+
+<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetIterator'></a>
+### GetIterator() `method`
+
+##### Summary
+
+Returns an iterator, that implements
+[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}')
+, that
+iterates through the collection.
+
+##### Returns
+
+An iterator that can be used to iterate through the collection.
+
+##### Parameters
+
+This method has no parameters.
+
+##### Remarks
+
+This method's implementation merely casts the result of the
+[GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
+method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-System#Collections#IEnumerable#GetEnumerator'></a>
 ### System#Collections#IEnumerable#GetEnumerator() `method`

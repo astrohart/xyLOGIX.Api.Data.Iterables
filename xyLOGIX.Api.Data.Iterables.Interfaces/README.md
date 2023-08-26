@@ -4,8 +4,8 @@
 ## Contents
 
 - [IIterable\`1](#T-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1')
+  - [AttachIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.AttachIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [GetIterator()](#M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-GetIterator 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.GetIterator')
-  - [HavingIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-HavingIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.HavingIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
 - [Resources](#T-xyLOGIX-Api-Data-Iterables-Interfaces-Properties-Resources 'xyLOGIX.Api.Data.Iterables.Interfaces.Properties.Resources')
   - [Culture](#P-xyLOGIX-Api-Data-Iterables-Interfaces-Properties-Resources-Culture 'xyLOGIX.Api.Data.Iterables.Interfaces.Properties.Resources.Culture')
   - [ResourceManager](#P-xyLOGIX-Api-Data-Iterables-Interfaces-Properties-Resources-ResourceManager 'xyLOGIX.Api.Data.Iterables.Interfaces.Properties.Resources.ResourceManager')
@@ -25,29 +25,8 @@ separate interface/object tree? Because you need to then bolt this up to
 a custom implementation that does not necessarily need to do all the
 things an IEnumerable does, given the unique nature of paged API data.
 
-<a name='M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-GetIterator'></a>
-### GetIterator() `method`
-
-##### Summary
-
-Returns an iterator, that implements [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') , that
-iterates through the collection.
-
-##### Returns
-
-An iterator that can be used to iterate through the collection.
-
-##### Parameters
-
-This method has no parameters.
-
-##### Remarks
-
-This method's implementation merely casts the result of the [GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
-method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
-
-<a name='M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-HavingIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
-### HavingIterator(iterator) `method`
+<a name='M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
+### AttachIterator(iterator) `method`
 
 ##### Summary
 
@@ -85,6 +64,27 @@ using inversion of control by passing this in the constructor.
 We have a factory in front of both these objects, and the objective
 of using fluent methods instead is to avoid having to include a
 whole bunch of NuGet packages in the factory module.
+
+<a name='M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-GetIterator'></a>
+### GetIterator() `method`
+
+##### Summary
+
+Returns an iterator, that implements [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') , that
+iterates through the collection.
+
+##### Returns
+
+An iterator that can be used to iterate through the collection.
+
+##### Parameters
+
+This method has no parameters.
+
+##### Remarks
+
+This method's implementation merely casts the result of the [GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator')
+method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
 
 <a name='T-xyLOGIX-Api-Data-Iterables-Interfaces-Properties-Resources'></a>
 ## Resources `type`
