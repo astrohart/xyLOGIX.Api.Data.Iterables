@@ -12,7 +12,7 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
     /// custom implementation that does not necessarily need to do all the things an
     /// IEnumerable does, given the unique nature of paged API data.
     /// </summary>
-    [Actor]
+    [Synchronized]
     public interface IIterable<T> : IEnumerable<T> where T : class
     {
         /// <summary>
