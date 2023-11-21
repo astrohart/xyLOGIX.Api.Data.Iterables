@@ -4,7 +4,9 @@
 ## Contents
 
 - [IterableBase\`1](#T-xyLOGIX-Api-Data-Iterables-IterableBase`1 'xyLOGIX.Api.Data.Iterables.IterableBase`1')
+  - [#ctor()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#ctor 'xyLOGIX.Api.Data.Iterables.IterableBase`1.#ctor')
   - [_iterator](#F-xyLOGIX-Api-Data-Iterables-IterableBase`1-_iterator 'xyLOGIX.Api.Data.Iterables.IterableBase`1._iterator')
+  - [#cctor()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#cctor 'xyLOGIX.Api.Data.Iterables.IterableBase`1.#cctor')
   - [AttachIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.IterableBase`1.AttachIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [GetEnumerator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.GetEnumerator')
   - [GetIterator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetIterator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.GetIterator')
@@ -28,45 +30,93 @@ Serves as the common base for all REST API iterable objects.
 
 | Name | Description |
 | ---- | ----------- |
-| T | Type of the element of the collection -- typically a JSON-deserialized class representing a single value in the REST API data set. |
+| T | Type of the element of the collection -- typically a
+JSON-deserialized class representing a single value in the REST API data set. |
+
+<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#ctor'></a>
+### #ctor() `constructor`
+
+##### Summary
+
+Initializes a new instance of
+[IterableBase](#T-xyLOGIX-Api-Data-Iterables-IterableBase 'xyLOGIX.Api.Data.Iterables.IterableBase') and returns a
+reference to it.
+
+##### Parameters
+
+This constructor has no parameters.
+
+##### Remarks
+
+This constructor is marked `protected`
+due to the fact that this class is marked `abstract`.
 
 <a name='F-xyLOGIX-Api-Data-Iterables-IterableBase`1-_iterator'></a>
 ### _iterator `constants`
 
 ##### Summary
 
-Reference to the iterator that we use to return for enumeration functionality.
+Reference to the iterator that we use to return for enumeration
+functionality.
+
+<a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#cctor'></a>
+### #cctor() `method`
+
+##### Summary
+
+Initializes static data or performs actions that need to be performed once only
+for the [IterableBase](#T-xyLOGIX-Api-Data-Iterables-IterableBase 'xyLOGIX.Api.Data.Iterables.IterableBase') class.
+
+##### Parameters
+
+This method has no parameters.
+
+##### Remarks
+
+This constructor is called automatically prior to the first instance being
+created or before any static members are referenced.
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
 ### AttachIterator(iterator) `method`
 
 ##### Summary
 
-Associates this iterable with an iterator. Basically, this sets up the same relationship as exists between [IEnumerable](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable') and [IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerator 'System.Collections.Generic.IEnumerator').
+Associates this iterable with an iterator. Basically, this sets up
+the same relationship as exists between
+[IEnumerable](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerable 'System.Collections.Generic.IEnumerable') and
+[IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.Generic.IEnumerator 'System.Collections.Generic.IEnumerator').
 
 ##### Returns
 
-Reference to the same instance of the object that called this method, for fluent use.
+Reference to the same instance of the object that called this method,
+for fluent use.
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| iterator | [xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{\`0}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0}') | (Required.) Reference to an instance of an object that implements the [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') interface that represents the iterator object that is to be associated with this object. |
+| iterator | [xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{\`0}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0}') | (Required.) Reference to an instance of an object that
+implements the
+[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') interface
+that represents the iterator object that is to be associated with this object. |
 
 ##### Exceptions
 
 | Name | Description |
 | ---- | ----------- |
-| [ArgumentNullException](#T-ArgumentNullException 'ArgumentNullException') | Thrown if the required parameter, `iterator`, is passed a `null` value. |
+| [ArgumentNullException](#T-ArgumentNullException 'ArgumentNullException') | Thrown if the required parameter,
+`iterator`, is passed a `null` value. |
 
 ##### Remarks
 
-Users may wonder why we are writing this method here as opposed to using inversion of control by passing this in the constructor.
+Users may wonder why we are writing this method here as opposed to
+using inversion of control by passing this in the constructor.
 
 
 
-We have a factory in front of both these objects, and the objective of using fluent methods instead is to avoid having to include a whole bunch of NuGet packages in the factory module.
+We have a factory in front of both these objects, and the objective of using
+fluent methods instead is to avoid having to include a whole bunch of NuGet
+packages in the factory module.
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator'></a>
 ### GetEnumerator() `method`
@@ -88,7 +138,9 @@ This method has no parameters.
 
 ##### Summary
 
-Returns an iterator, that implements [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') , that iterates through the collection.
+Returns an iterator, that implements
+[IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}') , that
+iterates through the collection.
 
 ##### Returns
 
@@ -100,7 +152,9 @@ This method has no parameters.
 
 ##### Remarks
 
-This method's implementation merely casts the result of the [GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator') method to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
+This method's implementation merely casts the result of the
+[GetEnumerator](#M-xyLOGIX-Api-Data-Iterables-IterableBase-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator') method
+to [IIterator{T}](#T-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{T} 'xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}').
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-System#Collections#IEnumerable#GetEnumerator'></a>
 ### System#Collections#IEnumerable#GetEnumerator() `method`
@@ -111,7 +165,8 @@ Returns an enumerator that iterates through a collection.
 
 ##### Returns
 
-An [IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IEnumerator 'System.Collections.IEnumerator') object that can be used to iterate through the collection.
+An [IEnumerator](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Collections.IEnumerator 'System.Collections.IEnumerator') object that can be
+used to iterate through the collection.
 
 ##### Parameters
 
