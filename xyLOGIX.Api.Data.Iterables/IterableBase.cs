@@ -47,6 +47,12 @@ namespace xyLOGIX.Api.Data.Iterables
         protected IterableBase() { }
 
         /// <summary>
+        /// Gets a value indicating whether an <b>Iterator</b> is attached.
+        /// </summary>
+        public bool IteratorAttached
+            => _iterator != null;
+
+        /// <summary>
         /// Associates this iterable with an iterator. Basically, this sets up
         /// the same relationship as exists between
         /// <see cref="T:System.Collections.Generic.IEnumerable" /> and

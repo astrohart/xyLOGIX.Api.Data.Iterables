@@ -16,6 +16,11 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
     public interface IIterable<T> : IEnumerable<T> where T : class
     {
         /// <summary>
+        /// Gets a value indicating whether an <b>Iterator</b> is attached.
+        /// </summary>
+        bool IteratorAttached { get; }
+
+        /// <summary>
         /// Associates this iterable with an iterator. Basically, this sets up
         /// the same relationship as exists between
         /// <see cref="T:System.Collections.Generic.IEnumerable" /> and

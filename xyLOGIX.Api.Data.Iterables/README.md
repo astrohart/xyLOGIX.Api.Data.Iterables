@@ -6,6 +6,7 @@
 - [IterableBase\`1](#T-xyLOGIX-Api-Data-Iterables-IterableBase`1 'xyLOGIX.Api.Data.Iterables.IterableBase`1')
   - [#ctor()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#ctor 'xyLOGIX.Api.Data.Iterables.IterableBase`1.#ctor')
   - [_iterator](#F-xyLOGIX-Api-Data-Iterables-IterableBase`1-_iterator 'xyLOGIX.Api.Data.Iterables.IterableBase`1._iterator')
+  - [IteratorAttached](#P-xyLOGIX-Api-Data-Iterables-IterableBase`1-IteratorAttached 'xyLOGIX.Api.Data.Iterables.IterableBase`1.IteratorAttached')
   - [#cctor()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#cctor 'xyLOGIX.Api.Data.Iterables.IterableBase`1.#cctor')
   - [AttachIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.IterableBase`1.AttachIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [GetEnumerator()](#M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator 'xyLOGIX.Api.Data.Iterables.IterableBase`1.GetEnumerator')
@@ -58,6 +59,13 @@ due to the fact that this class is marked `abstract`.
 
 Reference to the iterator that we use to return for enumeration
 functionality.
+
+<a name='P-xyLOGIX-Api-Data-Iterables-IterableBase`1-IteratorAttached'></a>
+### IteratorAttached `property`
+
+##### Summary
+
+Gets a value indicating whether an is attached.
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-#cctor'></a>
 ### #cctor() `method`
