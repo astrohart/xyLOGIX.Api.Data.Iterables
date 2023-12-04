@@ -4,6 +4,7 @@
 ## Contents
 
 - [IIterable\`1](#T-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1')
+  - [IteratorAttached](#P-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-IteratorAttached 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.IteratorAttached')
   - [AttachIterator(iterator)](#M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}- 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.AttachIterator(xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{`0})')
   - [GetIterator()](#M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-GetIterator 'xyLOGIX.Api.Data.Iterables.Interfaces.IIterable`1.GetIterator')
 - [Resources](#T-xyLOGIX-Api-Data-Iterables-Interfaces-Properties-Resources 'xyLOGIX.Api.Data.Iterables.Interfaces.Properties.Resources')
@@ -25,6 +26,13 @@ object (the API data version of
 separate interface/object tree? Because you need to then bolt this up to a
 custom implementation that does not necessarily need to do all the things an
 IEnumerable does, given the unique nature of paged API data.
+
+<a name='P-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-IteratorAttached'></a>
+### IteratorAttached `property`
+
+##### Summary
+
+Gets a value indicating whether an is attached.
 
 <a name='M-xyLOGIX-Api-Data-Iterables-Interfaces-IIterable`1-AttachIterator-xyLOGIX-Api-Data-Iterators-Interfaces-IIterator{`0}-'></a>
 ### AttachIterator(iterator) `method`
