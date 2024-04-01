@@ -123,7 +123,7 @@ using inversion of control by passing this in the constructor.
 
 
 We have a factory in front of both these objects, and the objective of using
-fluent methods instead is to avoid having to include a whole bunch of NuGet
+fluent methods instead is to avoid having to include a bunch of NuGet
 packages in the factory module.
 
 <a name='M-xyLOGIX-Api-Data-Iterables-IterableBase`1-GetEnumerator'></a>
