@@ -1,4 +1,5 @@
-﻿using PostSharp.Patterns.Diagnostics;
+﻿using JetBrains.Annotations;
+using PostSharp.Patterns.Diagnostics;
 using PostSharp.Patterns.Model;
 using PostSharp.Patterns.Threading;
 using System;
@@ -77,7 +78,7 @@ namespace xyLOGIX.Api.Data.Iterables
         /// using inversion of control by passing this in the constructor.
         /// <para />
         /// We have a factory in front of both these objects, and the objective of using
-        /// fluent methods instead is to avoid having to include a whole bunch of NuGet
+        /// fluent methods instead is to avoid having to include a bunch of NuGet
         /// packages in the factory module.
         /// </remarks>
         public IIterable<T> AttachIterator(IIterator<T> iterator)
@@ -112,6 +113,7 @@ namespace xyLOGIX.Api.Data.Iterables
         /// <see cref="M:xyLOGIX.Api.Data.Iterables.IterableBase.GetEnumerator" /> method
         /// to <see cref="T:xyLOGIX.Api.Data.Iterators.Interfaces.IIterator{T}" />.
         /// </remarks>
+        [MustDisposeResource]
         public IIterator<T> GetIterator()
         {
             IIterator<T> result;
