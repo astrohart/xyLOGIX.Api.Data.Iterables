@@ -18,7 +18,7 @@ namespace xyLOGIX.Api.Data.Iterables.Interfaces
         /// <summary>
         /// Gets a value indicating whether an <b>Iterator</b> is attached.
         /// </summary>
-        bool IteratorAttached { get; }
+        bool IteratorAttached { [DebuggerStepThrough] get; }
 
         /// <summary>
         /// Associates this iterable with an iterator. Basically, this sets up
