@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using PostSharp.Patterns.Threading;
 using System.Collections.Generic;
 using xyLOGIX.Api.Data.Iterators.Interfaces;
